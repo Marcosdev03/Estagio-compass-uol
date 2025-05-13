@@ -10,10 +10,17 @@ Organizar e documentar todos os aprendizados, tarefas realizadas, scripts desenv
 
 Estágio
 └── Documentos
+
 ├── 01-Mapas Mentais
+
 ├── 02-Planejamento de Teste
+
 ├── 03-Relatório de Bugs
+
 └── 04-Issues
+
+
+
 
 
 
