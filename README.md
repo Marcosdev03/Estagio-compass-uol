@@ -12,13 +12,15 @@ Estágio
 
 └── Documentos
 
-├── 01-Mapas Mentais
+├── sprint-01
 
-├── 02-Planejamento de Teste
+├── sprint-02
 
-├── 03-Relatório de Bugs
+├── sprint-03
 
-└── 04-Issues
+└── sprint-04
+
+└── sprint-05
 
 
 
