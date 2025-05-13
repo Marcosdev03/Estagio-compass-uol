@@ -9,6 +9,7 @@ Organizar e documentar todos os aprendizados, tarefas realizadas, scripts desenv
 ##  Estrutura da Pasta
 
 Estágio
+
 └── Documentos
 
 ├── 01-Mapas Mentais
