@@ -1,10 +1,10 @@
-# 🧮 Projeto: Calculadora TDD
+#  Projeto: Calculadora TDD
 
 Este projeto é uma calculadora desenvolvida com Python utilizando a abordagem de **Test-Driven Development (TDD)**. Foi realizado como parte das atividades do estágio na Compass UOL.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Python 3.12
 - Pytest 8.3.5
@@ -13,7 +13,7 @@ Este projeto é uma calculadora desenvolvida com Python utilizando a abordagem d
 
 ---
 
-## ⚙️ Como configurar o ambiente
+## ⚙ Como configurar o ambiente
 
 1. **Clone o repositório:**
 
