@@ -4,15 +4,18 @@ Library    Collections
 Library    String
 Resource  ../variables.robot
 
+
 *** Keywords ***
 Autenticar Usuario
     ${body}=    Create Dictionary    username=${USERNAME}    password=${PASSWORD}
     ${response}=    POST On Session    restful    /auth    json=${body}
     Set Test Variable    ${AUTH_RESPONSE}    ${response}
 
+
 Validar Status Code 200
     [Arguments]    ${response}
     Should Be Equal As Strings    ${response.status_code}    200
+
 
 Extrair BookingID
     [Arguments]    ${response}
@@ -22,8 +25,6 @@ Extrair BookingID
     Set Test Variable    ${booking_id}    ${id_da_reserva}
 
     
-
-
 Montar Corpo Da Reserva
     ${bookingdates}=    Create Dictionary
     ...    checkin=2018-01-01
@@ -39,10 +40,12 @@ Montar Corpo Da Reserva
     
     Set Test Variable    ${POST_BODY}    ${body}
 
+
 Enviar Requisicao POST Reserva
     Log    ${POST_BODY}    console=yes
     ${response}=    POST On Session    restful    /booking    json=${POST_BODY}
     Set Test Variable    ${POST_RESPONSE}    ${response}
+
 
 Verificar Status code 200
     [Arguments]    ${response}
@@ -72,14 +75,17 @@ Montar Corpo Atualizado
     
     Set Test Variable    ${PUT_BODY}    ${dados_reserva_atualizado}
 
+
 Enviar PUT Com Token
     ${headers}=    Create Dictionary    Cookie=token=${token}
     ${resposta_put}=    PUT On Session    restful    /booking/${BOOKING_ID}    json=${PUT_BODY}    headers=${headers}
     Set Test Variable    ${PUT_RESPONSE}    ${resposta_put}
 
+
 Verificar Status Code PUT 200
     [Arguments]    ${resposta_do_enviar_put}
     Should Be Equal As Strings    ${resposta_do_enviar_put.status_code}    200
+
 
 Extrair Token
     [Arguments]    ${response}

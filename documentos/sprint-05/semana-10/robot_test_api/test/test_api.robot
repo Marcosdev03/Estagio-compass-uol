@@ -5,6 +5,7 @@ Resource    ../resources/keywords.robot
 
 Suite Setup     Create Session    restful    ${BASE_URL}
 
+
 *** Test Cases ***
 POTS - Login com Sucesso
     Autenticar Usuario
@@ -57,6 +58,7 @@ DELET - Deletar Reserva Com Sucesso
     ${headers}=    Create Dictionary    Cookie=${cookie}
     ${DELETE_RESPONSE}=    DELETE On Session    restful    /booking/${booking_id}    headers=${headers}
     Should Be Equal As Strings    ${DELETE_RESPONSE.status_code}    201
+    
 
 EBUG - Ver Estrutura da Resposta
     Montar Corpo Da Reserva
