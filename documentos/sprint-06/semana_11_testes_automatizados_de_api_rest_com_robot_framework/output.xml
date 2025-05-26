@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on linux)" generated="2025-05-26T16:30:25.547271" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Api" source="/mnt/d/Estágio compass uol/documentos/sprint-06/semana_11_testes_automatizados_de_api_rest_com_robot_framework/robot_test_api/test/test_api.robot">
+<kw name="Create Session" owner="RequestsLibrary" type="SETUP">
+<msg time="2025-05-26T16:30:25.750673" level="INFO">Creating Session using : alias=restful, url=https://restful-booker.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>restful</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-26T16:30:25.750040" elapsed="0.006060"/>
+</kw>
+<test id="s1-t1" name="Login Com Massa Dinâmica" line="73">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2025-05-26T16:30:25.759847" level="ERROR">JSON file: /mnt/d/Estágio compass uol/documentos/sprint-06/semana_11_testes_automatizados_de_api_rest_com_robot_framework/robot_test_api/test/massas.json not found</msg>
+<msg time="2025-05-26T16:30:25.766034" level="FAIL">OSError</msg>
+<var>${json}</var>
+<arg>${CAMINHO_JSON}</arg>
+<doc>Load JSON from file.</doc>
+<status status="FAIL" start="2025-05-26T16:30:25.757688" elapsed="0.010034">OSError</status>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<var>${usuario_dinamico}</var>
+<arg>${json}</arg>
+<arg>$.usuario_dinamico[*]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="NOT RUN" start="2025-05-26T16:30:25.768559" elapsed="0.000208"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<arg>login</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="NOT RUN" start="2025-05-26T16:30:25.769653" elapsed="0.000232"/>
+</kw>
+<kw name=":FOR">
+<arg>${usuario_json}</arg>
+<arg>IN</arg>
+<arg>@{usuario_dinamico}</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.770625" elapsed="0.000238"/>
+</kw>
+<kw name="\">
+<arg>Log To Console</arg>
+<arg>Testando login com: ${usuario_json['email']}</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.771509" elapsed="0.000183"/>
+</kw>
+<kw name="\">
+<arg>${body}=</arg>
+<arg>Create Dictionary</arg>
+<arg>email=${usuario_json['email']}</arg>
+<arg>password=${usuario_json['senha']}</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.772783" elapsed="0.000259"/>
+</kw>
+<kw name="\">
+<arg>${resp}=</arg>
+<arg>POST On Session</arg>
+<arg>login</arg>
+<arg>/login</arg>
+<arg>json=${body}</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.774063" elapsed="0.000300"/>
+</kw>
+<kw name="\">
+<arg>Status Should Be</arg>
+<arg>200</arg>
+<arg>${resp}</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.776248" elapsed="0.000281"/>
+</kw>
+<kw name="\">
+<arg>${token}=</arg>
+<arg>Get From Dictionary</arg>
+<arg>${resp.json()}</arg>
+<arg>token</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.777393" elapsed="0.000291"/>
+</kw>
+<kw name="\">
+<arg>Log To Console</arg>
+<arg>Token recebido: ${token}</arg>
+<status status="NOT RUN" start="2025-05-26T16:30:25.778797" elapsed="0.000215"/>
+</kw>
+<status status="FAIL" start="2025-05-26T16:30:25.756568" elapsed="0.023091">OSError</status>
+</test>
+<status status="FAIL" start="2025-05-26T16:30:25.554159" elapsed="0.226816"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Api" id="s1" pass="0" fail="1" skip="0">Test Api</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-26T16:30:25.759847" level="ERROR">JSON file: /mnt/d/Estágio compass uol/documentos/sprint-06/semana_11_testes_automatizados_de_api_rest_com_robot_framework/robot_test_api/test/massas.json not found</msg>
+</errors>
+</robot>
