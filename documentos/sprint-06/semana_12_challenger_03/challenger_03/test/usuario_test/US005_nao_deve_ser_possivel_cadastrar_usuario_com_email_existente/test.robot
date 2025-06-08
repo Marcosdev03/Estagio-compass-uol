@@ -51,4 +51,4 @@ US005-CT01 - Atualização de Usuário com E-mail Já Usado por Outro
     
     # Validações da resposta de erro
     ${json}=    Validar Resposta Erro    ${response}    400    message    Este email já está sendo usado
-    Log    Resposta da tentativa de atualização: ${json}
+    Log    Resposta da tentativa de atualização: ${json}.
