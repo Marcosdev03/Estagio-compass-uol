@@ -1,0 +1,387 @@
+{"level":30,"time":"2025-06-12T18:51:06.732Z","pid":59279,"hostname":"marcos-550XDA","msg":"Listening on 127.0.0.1:40843"}
+(node:59279) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-12T18:51:06.796Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.061Z","pid":59279,"hostname":"marcos-550XDA","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-06-12T18:51:07.062Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.061Z","pid":59279,"hostname":"marcos-550XDA","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-12T18:51:07.067Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-12T18:51:07.067Z","pid":59279,"hostname":"marcos-550XDA","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-12T18:51:07.076Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.202Z","pid":59279,"hostname":"marcos-550XDA","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-12T18:51:07.202Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active page"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-06-12T18:51:07.223Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  newPage"}
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+[2m  - navigating to "http://localhost:3000/", waiting until "load"[22m
+
+    at newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:12570:18)
+    at async PlaywrightServer.newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.242Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.243Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.265Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.265Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.269Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.269Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.279Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.279Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.284Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.284Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.288Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.288Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.291Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.291Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.293Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.295Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.305Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.310Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.310Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.315Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.315Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.320Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-12T18:51:07.320Z","pid":59279,"hostname":"marcos-550XDA","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-12T18:51:07.326Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.399Z","pid":59279,"hostname":"marcos-550XDA","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-12T18:51:07.399Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active page"}
+{"level":30,"time":"2025-06-12T18:51:07.421Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+[2m  - navigating to "http://localhost:3000/", waiting until "load"[22m
+
+    at newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:12570:18)
+    at async PlaywrightServer.newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'Error'
+}
+=============================================================
+================= Original suppressed error =================
+{"level":30,"time":"2025-06-12T18:51:07.431Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.431Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.444Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.444Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.454Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.454Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.465Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.466Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.468Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.469Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.471Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.472Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.477Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.477Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.479Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.482Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.492Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.496Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.497Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.502Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.502Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.510Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-12T18:51:07.512Z","pid":59279,"hostname":"marcos-550XDA","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-12T18:51:07.518Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.583Z","pid":59279,"hostname":"marcos-550XDA","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-12T18:51:07.583Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active page"}
+{"level":30,"time":"2025-06-12T18:51:07.613Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+[2m  - navigating to "http://localhost:3000/", waiting until "load"[22m
+
+    at newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:12570:18)
+    at async PlaywrightServer.newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'Error'
+}
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.621Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.621Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-06-12T18:51:07.644Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.644Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.650Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.650Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.663Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.663Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.665Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.665Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.667Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.667Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.670Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.670Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.672Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.673Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.680Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.683Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.683Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.692Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.692Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.696Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-12T18:51:07.696Z","pid":59279,"hostname":"marcos-550XDA","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-12T18:51:07.703Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.760Z","pid":59279,"hostname":"marcos-550XDA","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-12T18:51:07.760Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active page"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-06-12T18:51:07.766Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  newPage"}
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+[2m  - navigating to "http://localhost:3000/", waiting until "load"[22m
+
+    at newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:12570:18)
+    at async PlaywrightServer.newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'Error'
+}
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.770Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.770Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.778Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.779Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.784Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.784Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.795Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.795Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.797Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.797Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.800Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.800Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.804Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.804Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.807Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.809Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.822Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:07.827Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.827Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.832Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.832Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-12T18:51:07.836Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-12T18:51:07.836Z","pid":59279,"hostname":"marcos-550XDA","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-12T18:51:07.840Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:07.909Z","pid":59279,"hostname":"marcos-550XDA","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-12T18:51:07.909Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+[2m  - navigating to "http://localhost:3000/", waiting until "load"[22m
+
+    at newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:12570:18)
+    at async PlaywrightServer.newPage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.942Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  newPage"}
+{"level":30,"time":"2025-06-12T18:51:07.946Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.947Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.974Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.974Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-06-12T18:51:07.980Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method takeScreenshot"}
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-12T18:51:07.980Z","pid":59279,"hostname":"marcos-550XDA","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-06-12T18:51:07.990Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.990Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.992Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.992Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.994Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.994Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.998Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:07.998Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:08.000Z","pid":59279,"hostname":"marcos-550XDA","msg":"Changed active context"}
+{"level":30,"time":"2025-06-12T18:51:08.001Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:08.007Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-12T18:51:08.013Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:08.013Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-12T18:51:10.038Z","pid":59279,"hostname":"marcos-550XDA","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-12T18:51:10.168Z","pid":59279,"hostname":"marcos-550XDA","msg":"End of node method closeAllBrowsers"}

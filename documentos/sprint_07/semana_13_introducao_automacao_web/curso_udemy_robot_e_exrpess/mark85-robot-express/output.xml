@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.2 on linux)" generated="2025-06-12T15:51:05.794119" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="/media/marcos/MEU HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/tests/signup.robot">
+<test id="s1-t1" name="Deve poder cadastrar um novo usuário" line="11">
+<kw name="Start Session" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-12T15:51:06.130727" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/media/marcos/MEU HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/browser/traces/temp/d1ba8b8e-b5a5-45bf-8c8b-94f5d615fe10"}</msg>
+<msg time="2025-06-12T15:51:06.151004" level="INFO">Starting Browser process /home/marcos/anaconda3/envs/ambiente_compasso/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:40843</msg>
+<msg time="2025-06-12T15:51:07.063169" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/media/marcos/MEU HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/browser/traces/temp/d1ba8b8e-b5a5-45bf-8c8b-94f5d615fe10"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-12T15:51:06.129785" elapsed="0.933670"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-12T15:51:07.245769" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.246216" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.246998" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.063746" elapsed="0.191109">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-06-12T15:51:06.128801" elapsed="1.131977">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-12T15:51:07.270613" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.270860" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.271025" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.261553" elapsed="0.011742">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-06-12T15:51:07.289769" level="INFO">Switching context to context=774a7836-e7e3-4c15-a51b-8560fae699e2 in CURRENT</msg>
+<msg time="2025-06-12T15:51:07.294310" level="INFO">Successfully changed active context: context=774a7836-e7e3-4c15-a51b-8560fae699e2</msg>
+<msg time="2025-06-12T15:51:07.307501" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-06-12T15:51:06.127685" elapsed="1.145872">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<test id="s1-t2" name="Não deve permitir o cadastro com email duplicado" line="23">
+<kw name="Start Session" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-12T15:51:07.313780" level="INFO">Switching browser to browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.316354" level="INFO">Successfully changed active browser: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.316734" level="INFO">Reusing existing browser with id: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-12T15:51:07.312847" elapsed="0.004097"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-12T15:51:07.433402" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.433754" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.433987" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.317258" elapsed="0.120811">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-06-12T15:51:07.312219" elapsed="0.126159">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-12T15:51:07.456738" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.457044" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.457279" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.439330" elapsed="0.020320">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-06-12T15:51:07.474575" level="INFO">Switching context to context=048ae5bc-3b23-4e0c-997b-4e7b1a2691c2 in CURRENT</msg>
+<msg time="2025-06-12T15:51:07.481161" level="INFO">Successfully changed active context: context=048ae5bc-3b23-4e0c-997b-4e7b1a2691c2</msg>
+<msg time="2025-06-12T15:51:07.493217" level="INFO">Successfully closed Context</msg>
+<tag>dup</tag>
+<status status="FAIL" start="2025-06-12T15:51:07.308485" elapsed="0.151992">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<test id="s1-t3" name="Campos obrigatórios" line="37">
+<kw name="Start Session" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-12T15:51:07.500739" level="INFO">Switching browser to browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.504334" level="INFO">Successfully changed active browser: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.504643" level="INFO">Reusing existing browser with id: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-12T15:51:07.499224" elapsed="0.005567"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-12T15:51:07.632580" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.633966" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.634225" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.505073" elapsed="0.132289">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-06-12T15:51:07.497998" elapsed="0.140684">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-12T15:51:07.651541" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.651903" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.652126" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.639436" elapsed="0.015816">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-06-12T15:51:07.668994" level="INFO">Switching context to context=ca8ca34f-5bcc-4434-99ea-5141809d52d4 in CURRENT</msg>
+<msg time="2025-06-12T15:51:07.673023" level="INFO">Successfully changed active context: context=ca8ca34f-5bcc-4434-99ea-5141809d52d4</msg>
+<msg time="2025-06-12T15:51:07.681056" level="INFO">Successfully closed Context</msg>
+<tag>required</tag>
+<status status="FAIL" start="2025-06-12T15:51:07.493883" elapsed="0.162604">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<test id="s1-t4" name="Não deve cadastrar com email incorreto" line="52">
+<kw name="Start Session" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-12T15:51:07.690347" level="INFO">Switching browser to browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.693461" level="INFO">Successfully changed active browser: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.693718" level="INFO">Reusing existing browser with id: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-12T15:51:07.689565" elapsed="0.004301"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-12T15:51:07.771820" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.772029" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.772172" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.694147" elapsed="0.079134">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-06-12T15:51:07.685125" elapsed="0.088391">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-12T15:51:07.786188" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.786786" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.787337" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.774188" elapsed="0.015199">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-06-12T15:51:07.802272" level="INFO">Switching context to context=b4a2707b-31f5-4530-905d-c0fe1acf2747 in CURRENT</msg>
+<msg time="2025-06-12T15:51:07.808161" level="INFO">Successfully changed active context: context=b4a2707b-31f5-4530-905d-c0fe1acf2747</msg>
+<msg time="2025-06-12T15:51:07.823376" level="INFO">Successfully closed Context</msg>
+<tag>inv_email</tag>
+<status status="FAIL" start="2025-06-12T15:51:07.681704" elapsed="0.108367">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<test id="s1-t5" name="Não deve cadastrar com senha muito curta" line="64">
+<kw name="Start Session" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-12T15:51:07.830094" level="INFO">Switching browser to browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.833033" level="INFO">Successfully changed active browser: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<msg time="2025-06-12T15:51:07.833370" level="INFO">Reusing existing browser with id: browser=55e9d12d-4a46-48fb-8c04-368cb5c04ecd</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-12T15:51:07.829347" elapsed="0.004244"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-12T15:51:07.947849" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.948227" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.948471" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.833862" elapsed="0.121593">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-06-12T15:51:07.828751" elapsed="0.127023">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-12T15:51:07.981945" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-06-12T15:51:07.982195" level="INFO">See also file:///media/marcos/MEU%20HD/estagio_compass_uol/documentos/sprint_07/semana_13_introducao_automacao_web/curso_udemy_robot_e_exrpess/mark85-robot-express/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-12T15:51:07.982386" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-06-12T15:51:07.962503" elapsed="0.021938">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-06-12T15:51:07.995888" level="INFO">Switching context to context=aa3043a8-a55b-4693-b94b-b2ee0a817f53 in CURRENT</msg>
+<msg time="2025-06-12T15:51:08.000549" level="INFO">Successfully changed active context: context=aa3043a8-a55b-4693-b94b-b2ee0a817f53</msg>
+<msg time="2025-06-12T15:51:08.008386" level="INFO">Successfully closed Context</msg>
+<tag>temp</tag>
+<status status="FAIL" start="2025-06-12T15:51:07.824756" elapsed="0.160337">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+Call log:
+  - navigating to "http://localhost:3000/", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<doc>Cenários de testes do cadastro de usuários</doc>
+<status status="FAIL" start="2025-06-12T15:51:05.796226" elapsed="2.213226"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">dup</stat>
+<stat pass="0" fail="1" skip="0">inv_email</stat>
+<stat pass="0" fail="1" skip="0">required</stat>
+<stat pass="0" fail="1" skip="0">temp</stat>
+</tag>
+<suite>
+<stat name="Signup" id="s1" pass="0" fail="5" skip="0">Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
